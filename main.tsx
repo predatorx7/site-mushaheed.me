@@ -1,26 +1,22 @@
 /** @jsx h */
 
-import blog, { ga, redirects, h } from "blog";
+import blog, { ga, h, redirects } from "blog";
+import { unocss_opts } from "./unocss.ts";
+import { links } from "./links.ts";
 
 blog({
   title: "Mushaheed Syed",
   description: "Welcome to my awesome blog",
-  // header: <header>Your custom header</header>,
-  // section: <section>Your custom section</section>,
-  // footer: <footer>Your custom footer</footer>,
   avatar: "/assets/brownie.jpg",
   avatarClass: "rounded-full",
   author: "Mushaheed Syed",
+  favicon: "/assets/favicon.png",
   lang: "en",
-  links: [
-    { title: "Email", url: "mailto:hello@mushaheed.me" },
-    { title: "GitHub", url: "https://github.com/predatorx7" },
-    { title: "Twitter", url: "https://twitter.com/_predatorx7" },
-    { title: "LinkedIn", url: "https://www.linkedin.com/in/syedmushaheed/" },
-    { title: "Stack Overflow", url: "https://stackoverflow.com/users/10854681/syed-mushaheed" },
-    { title: "Behance", url: "https://www.behance.net/mushaheed" },
-  ],
-
+  links: links,
+  unocss: unocss_opts,
+  // header: <header>Your custom header</header>,
+  // section: <section>Your custom section</section>,
+  // footer: <footer>© 2022 Mushaheed Syed</footer>,
   // middlewares: [
 
   // If you want to set up Google Analytics, paste your GA key here.
