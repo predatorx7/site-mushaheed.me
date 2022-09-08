@@ -8,7 +8,7 @@ import { commons } from "./commons.ts";
 
 blog({
   title: commons.name,
-  description: "Welcome to my awesome blog",
+  description: "Welcome to my awesome website",
   avatar: "/assets/brownie.jpg",
   // cover: "/assets/background.png",
   avatarClass: "rounded-full",
