@@ -1,10 +1,10 @@
 /** @jsx h */
 
 import blog, { ga, h, redirects } from "blog";
-import { unocss_opts } from "./unocss.ts";
-import { links } from "./links.ts";
-import { Footer } from "./footer.tsx";
-import { commons } from "./commons.ts";
+import { unocss_opts } from "./src/unocss.ts";
+import { links } from "./src/links.ts";
+import { Footer } from "./src/components/footer.tsx";
+import { commons } from "./src/commons.ts";
 
 blog({
   title: commons.name,
