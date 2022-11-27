@@ -15,6 +15,14 @@ blog({
   author: commons.name,
   favicon: "/assets/favicon.png",
   lang: "en",
+  dateFormat: function(date: Date) {
+    return date.toLocaleDateString("en-us", {
+      weekday: "long",
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  },
   links: links,
   unocss: unocss_opts,
   // header: <header>Your custom header</header>,

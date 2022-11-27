@@ -1,6 +1,10 @@
 ---
 title: Hello world!
 publish_date: 2022-09-07
+snippet: "Hey readers! This is a short introduction to my website!
+
+My name is Mushaheed. I'm a software developer, and an open-source enthusiast."
+
 ---
 
 Heya readers! This is my first blog post!
