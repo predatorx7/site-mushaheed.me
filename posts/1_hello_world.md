@@ -2,6 +2,7 @@
 title: Hello world!
 publish_date: 2022-09-07
 snippet: "Short introduction of me & this website!"
+tags: [ "introduction" ]
 
 ---
 

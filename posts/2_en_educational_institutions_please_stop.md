@@ -2,6 +2,7 @@
 title: Educational institutions, please stop use of pirated & outdated softwares to teach
 publish_date: 2019-04-07
 snippet: "Sharing my observations, and possible solutions for unethical computer software usage in indian education institutes"
+tags: [ "education", "piracy", "software", "technology" ]
 
 ---
 

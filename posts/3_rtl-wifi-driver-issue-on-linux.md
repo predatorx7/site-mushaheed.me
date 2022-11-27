@@ -2,6 +2,8 @@
 title: Is your 'WIFI' driver on Linux Machine isn't working? maybe I can help you.
 publish_date: 2019-02-24
 snippet: "This is how I was able to solve my wifi driver issues on a linux OS that did not provide the driver support for my PC"
+tags: [ "linux", "technical", "wifi", "technology", "problem" ]
+
 ---
 
 When I switched to linux in the beginning, I experienced that the wifi on my
