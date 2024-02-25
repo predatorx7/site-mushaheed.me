@@ -1,7 +1,3 @@
-/** @jsx h */
-
-import { h } from "blog";
-
 export const BehanceIcon = () => {
   return (
     <svg

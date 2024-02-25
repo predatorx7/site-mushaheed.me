@@ -1,11 +1,7 @@
-/** @jsx h */
-
-import { h } from "blog";
-
 export const RssFeedIcon = () => {
   return (
     <svg
-      class="inline-block w-4 h-4"
+      className="inline-block w-4 h-4"
       viewBox="0 0 20 20"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,0 @@
-{
-  "imports": {
-    "blog": "https://deno.land/x/blog@0.5.0/blog.tsx",
-    "blog_deps": "https://deno.land/x/blog@0.5.0/deps.ts"
-  }
-}
