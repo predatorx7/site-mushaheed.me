@@ -1,4 +1,5 @@
 import AltBadge from "@/components/alt_badge";
+import { LinksNavBar } from "@/components/links/links_bar";
 import Image from "next/image";
 import Link from "next/link";
 import brownieJpg from "public/images/brownie.jpg";
@@ -22,8 +23,16 @@ export default function Home() {
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
         Hi, I&apos;m Mushaheed Syed 👋
       </h1>
+      <LinksNavBar />
       <p className="prose prose-neutral dark:prose-invert">
-        {`I'm a software developer. I currently `}
+        I&apos;m a <b>software developer</b>, and an <b>open-source</b>{" "}
+        enthusiast. I love to create beautiful, and easy-to-use applications for
+        users and excellent tools for developers. Building a better experience
+        for users and making softwares cheaper to maintain is my priority.
+      </p>
+      <br />
+      <p className="prose prose-neutral dark:prose-invert">
+        {`I currently `}
         <Link href="/work">work</Link>
         {` as the Senior Software Engineer at `}
         <span className="not-prose">
@@ -39,7 +48,7 @@ export default function Home() {
             />
           </AltBadge>
         </span>
-        {`, where I work with my client `}
+        {`, where I work with `}
         <span className="not-prose">
           <AltBadge href="https://www.finoux.com/">
             <Image
@@ -53,7 +62,7 @@ export default function Home() {
             />
           </AltBadge>
         </span>
-        {` to develop Banking as a service solutions, Full-stack apps for Enterprise apps, Enterprise & Public Mobile applications.`}
+        {`'s Banking as a service team to craft softwares their Enterprise, and Public projects.`}
       </p>
     </section>
   );

@@ -3,7 +3,7 @@ export const StackoverflowIcon = () => {
     <svg
       className="inline-block w-5 h-5"
       fill="none"
-      enable-background="new 0 0 20 20"
+      enableBackground="new 0 0 20 20"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
     >

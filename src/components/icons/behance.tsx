@@ -3,7 +3,7 @@ export const BehanceIcon = () => {
     <svg
       className="inline-block w-5 h-5"
       fill="none"
-      enable-background="new 0 0 20 12.7"
+      enableBackground="new 0 0 20 12.7"
       viewBox="0 0 20 12.7"
       xmlns="http://www.w3.org/2000/svg"
     >
