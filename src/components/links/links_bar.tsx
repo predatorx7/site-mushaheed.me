@@ -19,6 +19,7 @@ export const LinksNavBar = () => {
           <LinkIcon data={data} />
         ))}
       </nav>
+      <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
     </>
   );
 };

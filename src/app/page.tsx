@@ -5,6 +5,11 @@ import Link from "next/link";
 import brownieJpg from "public/images/brownie.jpg";
 import finouxSvg from "public/images/finoux.svg";
 import hdfcbankPng from "public/images/hdfcbank.png";
+import flutterConfJpg from "public/images/home/flutter_conf.jpg";
+import ayushShekharJpg from "public/images/home/me_with_ayush_shekar.jpg";
+import iitbAndroidJpg from "public/images/home/iitb_android.jpg";
+import attendedFlutterConfInJpg from "public/images/home/attended_flutter_conf_in.jpg";
+import tryingToWorkJpg from "public/images/home/trying_to_work.jpg";
 
 export default function Home() {
   return (
@@ -64,6 +69,58 @@ export default function Home() {
         </span>
         {`'s Banking as a service team to craft softwares their Enterprise, and Public projects.`}
       </p>
+      <div className="columns-2 sm:columns-3 gap-4 my-8">
+        <div className="relative h-40 mb-4">
+          <Image
+            alt="Learning Android at the Techfest event of IIT Bombay in 2018"
+            src={iitbAndroidJpg}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
+          />
+        </div>
+        <div className="relative h-80 mb-4 sm:mb-0">
+          <Image
+            alt="Me with Ayush Shekar at the Flutter Conf India"
+            src={ayushShekharJpg}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover object-[-16px] sm:object-center"
+          />
+        </div>
+        <div className="relative h-40 sm:h-80 sm:mb-4">
+          <Image
+            alt="Me attending my first in-person event, Flutter Conf India"
+            src={flutterConfJpg}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover object-top sm:object-center"
+          />
+        </div>
+        <div className="relative h-40 mb-4 sm:mb-0">
+          <Image
+            alt="Me, and my friend Sonal attended the Flutter Conf In event in Ahmedabad"
+            src={attendedFlutterConfInJpg}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
+          />
+        </div>
+        <div className="relative h-40 mb-4">
+          <Image
+            alt="Me working in a cafe with my favorite hot chocolate"
+            src={tryingToWorkJpg}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
+          />
+        </div>
+      </div>
     </section>
   );
 }
