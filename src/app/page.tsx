@@ -66,7 +66,7 @@ export default function Home() {
             />
           </AltBadge>
         </span>
-        {`'s Banking as a service team to craft softwares their Enterprise, and Public projects.`}
+        {`'s Banking as a service team to craft softwares for their Enterprise, and Public projects.`}
       </p>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
