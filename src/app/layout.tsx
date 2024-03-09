@@ -7,9 +7,10 @@ import { cx } from "@/utils/css";
 import { GeistMono } from "geist/font/mono";
 import { Navbar } from "@/components/nav";
 import { Footer } from "@/components/footer";
+import { BASE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mushaheed.me"),
+  metadataBase: new URL(BASE_URL),
   title: {
     default: "Mushaheed Syed",
     template: "%s | Mushaheed Syed",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "A sleep deprived Developer, writer, and creator who loves to explore this imperfect but beautiful world.",
   openGraph: {
-    title: "Lee Robinson",
+    title: "Mushaheed Syed",
     description:
       "A sleep deprived Developer, writer, and creator who loves to explore this imperfect but beautiful world.",
     url: "https://mushaheed.me",

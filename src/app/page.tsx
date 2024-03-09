@@ -31,9 +31,8 @@ export default function Home() {
       <LinksNavBar />
       <p className="prose prose-neutral dark:prose-invert">
         I&apos;m a <b>software developer</b>, and an <b>open-source</b>{" "}
-        enthusiast. I love to create beautiful, and easy-to-use applications for
-        users and excellent tools for developers. Building a better experience
-        for users and making softwares cheaper to maintain is my priority.
+        enthusiast. Building an easy experience for users and making softwares
+        cheaper to maintain is my priority.
       </p>
       <br />
       <p className="prose prose-neutral dark:prose-invert">
