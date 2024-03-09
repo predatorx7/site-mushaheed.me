@@ -8,7 +8,9 @@ export const getGuestbookEntries = async (): Promise<GuestBookData[]> => {
   return [];
 };
 
-export const saveGuestbookEntry = async (formData: FormData) => {};
+export const saveGuestbookEntry = (formData: FormData) => {
+  console.info({ formData });
+};
 
 export const authGuestbook = async (): Promise<
   { user?: string } | undefined
