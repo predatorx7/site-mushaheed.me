@@ -7,7 +7,7 @@ type AppConfig = {
 };
 
 const appSchema = Joi.object<AppConfig, true>({
-  BASE_URL: Joi.string().required().default("https://mushaheed.me"),
+  BASE_URL: Joi.string().uri().default("https://mushaheed.me"),
   DATABASE_URL: Joi.string().uri().required(),
 });
 
