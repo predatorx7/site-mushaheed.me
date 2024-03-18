@@ -1,3 +1,5 @@
 export async function GET(): Promise<Response> {
-  throw new Error("Unimplemented");
+  return new Response("Unimplemented", {
+    status: 405,
+  });
 }
