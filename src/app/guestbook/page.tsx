@@ -1,7 +1,8 @@
-import { authGuestbook, getGuestbookEntries } from "@/db/guestbook";
+import { getGuestbookEntries } from "@/db/guestbook";
 import { Suspense } from "react";
 import Form from "./form";
 import { SignIn, SignOut } from "./buttons";
+import { validateRequest } from "@/lib/auth-action";
 
 export const metadata = {
   title: "Guestbook",
@@ -11,9 +12,12 @@ export const metadata = {
 export default function GuestBookPage() {
   return (
     <section>
-      <h1 className="font-medium text-2xl mb-8 tracking-tighter">
+      <h1 className="font-medium text-2xl mb-2 tracking-tighter">
         Sign my Guestbook
       </h1>
+      <h3 className="font-normal text-sm mb-8 tracking-tighter">
+        Leave your mark
+      </h3>
       <Suspense>
         <GuestbookForm />
         <GuestbookEntries />
@@ -23,7 +27,7 @@ export default function GuestBookPage() {
 }
 
 async function GuestbookForm() {
-  let session = await authGuestbook();
+  const session = await validateRequest();
 
   return session?.user ? (
     <>
@@ -46,7 +50,7 @@ async function GuestbookEntries() {
     <div key={entry.id} className="flex flex-col space-y-1 mb-4">
       <div className="w-full text-sm break-words">
         <span className="text-neutral-600 dark:text-neutral-400 mr-1">
-          {entry.created_by}:
+          {entry.name}:
         </span>
         {entry.body}
       </div>
