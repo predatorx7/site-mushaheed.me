@@ -16,7 +16,8 @@ export const PeakBlog = ({ data }: { data: BlogData }) => {
       <section className="flex gap-x-2 flex-wrap">
         {data.metadata.tags.map((tag) => (
           <Link
-            className="text-bluegray-500 font-bold"
+            key={`data.metadata.tags.${tag}`}
+            className="text-bluegray-500 font-bold me-1"
             href={`/blob/?tag=${tag}`}
           >
             {`#${tag}`}

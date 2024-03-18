@@ -81,8 +81,8 @@ export default function Home() {
         </div>
         <div className="relative h-80 mb-4 sm:mb-0">
           <Image
-            alt="Me with Ayush Shekar at the Flutter Conf India"
-            src={ayushShekharJpg}
+            alt="Me attending my first in-person event, Flutter Conf India"
+            src={flutterConfJpg}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -91,8 +91,8 @@ export default function Home() {
         </div>
         <div className="relative h-40 sm:h-80 sm:mb-4">
           <Image
-            alt="Me attending my first in-person event, Flutter Conf India"
-            src={flutterConfJpg}
+            alt="Me with Ayush Shekar at the Flutter Conf India"
+            src={ayushShekharJpg}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
