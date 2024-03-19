@@ -15,6 +15,18 @@ export function Footer(props: { author?: string }) {
           <RssFeedIcon /> RSS
         </a>
       </p>
+      <a
+        className="me-2 text-xs decoration-solid dark:decoration-white"
+        href="/privacy-policy"
+      >
+        Privacy Policy
+      </a>
+      <a
+        className="me-2 text-xs decoration-solid dark:decoration-white"
+        href="/terms-of-service"
+      >
+        Terms of Service
+      </a>
     </footer>
   );
 }
