@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "fs/promises";
 import path from "path";
 import YAML from "yaml";
 
@@ -28,15 +28,16 @@ function parseFrontmatter(fileContent: string) {
   return { metadata: metadata as Metadata, content };
 }
 
-function getMarkdownFilesFrom(dir: string) {
-  return fs.readdirSync(dir).filter((file) => {
+async function getMarkdownFilesFrom(dir: string) {
+  const data = await fs.readdir(dir);
+  return data.filter((file) => {
     const fileExtName = path.extname(file);
     return fileExtName === ".mdx" || fileExtName === ".md";
   });
 }
 
-function readBlogFile(filePath: string) {
-  const rawContent = fs.readFileSync(filePath, "utf-8");
+async function readBlogFile(filePath: string) {
+  const rawContent = await fs.readFile(filePath, "utf-8");
   return parseFrontmatter(rawContent);
 }
 
@@ -45,10 +46,10 @@ function extractTweetIds(content: string) {
   return tweetMatches?.map((tweet) => tweet.match(/[0-9]+/g)![0]) || [];
 }
 
-function getBlogData(dir: string): BlogData[] {
-  const mdxFiles = getMarkdownFilesFrom(dir);
-  return mdxFiles.map((file) => {
-    const { metadata, content } = readBlogFile(path.join(dir, file));
+async function getBlogData(dir: string): Promise<BlogData[]> {
+  const mdxFiles = await getMarkdownFilesFrom(dir);
+  const promises = mdxFiles.map(async (file) => {
+    const { metadata, content } = await readBlogFile(path.join(dir, file));
     const slug = path.basename(file, path.extname(file));
     const tweetIds = extractTweetIds(content);
     return {
@@ -58,14 +59,16 @@ function getBlogData(dir: string): BlogData[] {
       content,
     };
   });
+  return Promise.all(promises);
 }
 
 function getContentDirectoryPath() {
   return path.join(process.cwd(), "content");
 }
 
-export function getBlogPosts() {
-  return getBlogData(getContentDirectoryPath()).sort((a, b) => {
+export async function getBlogPosts() {
+  const data = await getBlogData(getContentDirectoryPath());
+  return data.sort((a, b) => {
     if (new Date(a.metadata.publish_date) > new Date(b.metadata.publish_date)) {
       return -1;
     }

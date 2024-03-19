@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Form from "./form";
 import { SignIn, SignOut } from "./buttons";
 import { validateRequest } from "@/lib/auth-action";
+import { CircularLoading } from "@/components/loading";
 
 export const metadata = {
   title: "Guestbook",
@@ -18,7 +19,7 @@ export default function GuestBookPage() {
       <h3 className="font-normal text-sm mb-8 tracking-tighter">
         Leave your mark
       </h3>
-      <Suspense>
+      <Suspense fallback={CircularLoading()}>
         <GuestbookForm />
         <GuestbookEntries />
       </Suspense>

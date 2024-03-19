@@ -1,6 +1,6 @@
 import { PeakBlog } from "@/components/blog/peak_blog";
+import { CircularLoading } from "@/components/loading";
 import { getBlogPosts } from "@/db/blog";
-import Link from "next/link";
 import { Suspense } from "react";
 
 export const metadata = {
@@ -8,17 +8,27 @@ export const metadata = {
   description: "Read my thoughts on software development, design, and more.",
 };
 
-export default function BlogPage() {
-  const allBlogs = getBlogPosts();
+async function _Content() {
+  const allBlogs = await getBlogPosts();
 
+  return (
+    <>
+      {allBlogs.map((post) => (
+        <PeakBlog key={post.slug} data={post} />
+      ))}
+    </>
+  );
+}
+
+export default function BlogPage() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
         Read my Blog
       </h1>
-      {allBlogs.map((post) => (
-        <PeakBlog key={post.slug} data={post} />
-      ))}
+      <Suspense fallback={CircularLoading()}>
+        <_Content />
+      </Suspense>
     </section>
   );
 }

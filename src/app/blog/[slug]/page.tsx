@@ -11,7 +11,7 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata | undefined> {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+  let post = (await getBlogPosts()).find((post) => post.slug === params.slug);
   if (!post) {
     return;
   }
@@ -81,8 +81,8 @@ function formatDate(date: string) {
   return `${fullDate} (${formattedDate})`;
 }
 
-export default function Blog({ params }: { params: { slug: string } }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export default async function Blog({ params }: { params: { slug: string } }) {
+  const post = (await getBlogPosts()).find((post) => post.slug === params.slug);
 
   if (!post) {
     notFound();
