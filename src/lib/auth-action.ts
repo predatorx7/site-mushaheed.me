@@ -25,7 +25,7 @@ export const validateRequest = cache(
         cookies().set(
           sessionCookie.name,
           sessionCookie.value,
-          sessionCookie.attributes,
+          sessionCookie.attributes
         );
       }
       if (!result.session) {
@@ -33,12 +33,12 @@ export const validateRequest = cache(
         cookies().set(
           sessionCookie.name,
           sessionCookie.value,
-          sessionCookie.attributes,
+          sessionCookie.attributes
         );
       }
     } catch {}
     return result;
-  },
+  }
 );
 
 export const loginUrl = (method: "google" | "github") => {
@@ -60,9 +60,9 @@ export async function logout(): Promise<ActionResult> {
   cookies().set(
     sessionCookie.name,
     sessionCookie.value,
-    sessionCookie.attributes,
+    sessionCookie.attributes
   );
-  return redirect("/login");
+  return redirect("/");
 }
 
 interface ActionResult {
