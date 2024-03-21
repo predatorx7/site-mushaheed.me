@@ -11,5 +11,5 @@ export const pool = new pg.Pool({
 export const KNEX_CONNECTION = knex({
   client: "pg",
   connection: app.DATABASE_URL,
-  pool: { min: 0, max: 5 },
+  pool: { min: 0, max: 10 },
 });

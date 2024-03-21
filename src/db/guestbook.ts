@@ -40,7 +40,7 @@ export const saveGuestbookEntry = async (formData: FormData) => {
   const created_by = session.user?.username as string;
 
   const entry = formData.get("entry")?.toString() || "";
-  const body = entry.slice(0, 500);
+  const body = entry.slice(0, 2000);
 
   await KNEX_CONNECTION("guestbook").insert({
     name: name ?? created_by,

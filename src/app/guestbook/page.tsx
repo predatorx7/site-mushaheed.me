@@ -4,6 +4,7 @@ import Form from "./form";
 import { SignIn, SignOut } from "./buttons";
 import { validateRequest } from "@/lib/auth-action";
 import { CircularLoading } from "@/components/loading";
+import { SpanSeeMore } from "@/components/see_more/span_see_more";
 
 export const metadata = {
   title: "Guestbook",
@@ -41,20 +42,30 @@ async function GuestbookForm() {
 }
 
 async function GuestbookEntries() {
-  let entries = await getGuestbookEntries();
+  try {
+    const entries = await getGuestbookEntries();
 
-  if (entries.length === 0) {
-    return null;
-  }
+    if (entries.length === 0) {
+      return null;
+    }
 
-  return entries.map((entry) => (
-    <div key={entry.id} className="flex flex-col space-y-1 mb-4">
-      <div className="w-full text-sm break-words">
-        <span className="text-neutral-600 dark:text-neutral-400 mr-1">
-          {entry.name}:
-        </span>
-        {entry.body}
+    return entries.map((entry) => (
+      <div key={entry.id} className="flex flex-col space-y-1 mb-4">
+        <div className="w-full text-sm break-words">
+          <span className="text-neutral-600 dark:text-neutral-400 mr-1">
+            {entry.name}:
+          </span>
+          <SpanSeeMore text={entry.body} />
+        </div>
       </div>
-    </div>
-  ));
+    ));
+  } catch (error) {
+    console.error(error);
+    return (
+      <>
+        <h3>Oh no, something went wrong...</h3>
+        <h4>Maybe refresh?</h4>
+      </>
+    );
+  }
 }
