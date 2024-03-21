@@ -50,3 +50,9 @@ export const saveGuestbookEntry = async (formData: FormData) => {
 
   revalidatePath("/guestbook");
 };
+
+export const deleteGuestbookEntries = async (deleteIds: string[]) => {
+  return await KNEX_CONNECTION.from("guestbook")
+    .delete()
+    .whereIn("id", deleteIds);
+};
