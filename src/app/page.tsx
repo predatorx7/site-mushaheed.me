@@ -3,8 +3,9 @@ import { LinksNavBar } from "@/components/links/links_bar";
 import Image from "next/image";
 import Link from "next/link";
 import brownieJpg from "public/images/brownie.jpg";
-import finouxSvg from "public/images/finoux.svg";
-import hdfcbankPng from "public/images/hdfcbank.png";
+import creatorosSvg from "public/images/creatoros.svg";
+import reclaimPng from "public/images/reclaim.png";
+import bluecheckPng from "public/images/bluecheck.png";
 import flutterConfJpg from "public/images/home/flutter_conf.jpg";
 import ayushShekharJpg from "public/images/home/me_with_ayush_shekar.jpg";
 import iitbAndroidJpg from "public/images/home/iitb_android.jpg";
@@ -38,35 +39,48 @@ export default function Home() {
       <p className="prose prose-neutral dark:prose-invert">
         {`I currently `}
         <Link href="/work">work</Link>
-        {` as the Senior Software Engineer at `}
+        {` as a Software Developer with `}
         <span className="not-prose">
-          <AltBadge href="https://www.finoux.com/">
+          <AltBadge href="https://creatoros.co/">
             <Image
-              src={finouxSvg}
-              alt="Finoux"
+              src={creatorosSvg}
+              alt="CreatorOS"
+              width="20"
+              height="20"
+              role="img"
+              aria-label="CreatorOS"
+              className="inline-flex mr-1"
+            />
+          </AltBadge>
+        </span>
+        {` specializing in the creation of cross-platform mobile applications and SDKs to help build `}
+        <span className="not-prose">
+          <AltBadge href="https://reclaimprotocol.org/">
+            <Image
+              src={reclaimPng}
+              alt="Reclaim Protocol"
               width="80"
               height="20"
               role="img"
-              aria-label="Finoux"
+              aria-label="Reclaim Protocol"
               className="inline-flex mr-1"
             />
           </AltBadge>
         </span>
-        {`, where I work with `}
+        {` and `}
         <span className="not-prose">
-          <AltBadge href="https://www.finoux.com/">
+          <AltBadge href="https://thebluecheck.com/">
             <Image
-              src={hdfcbankPng}
-              alt="HDFC Bank"
-              width="116"
+              src={bluecheckPng}
+              alt="The Blue Check"
+              width="100"
               height="20"
               role="img"
-              aria-label="HDFC Bank"
+              aria-label="The Blue Check"
               className="inline-flex mr-1"
             />
           </AltBadge>
         </span>
-        {`'s Banking as a service team to craft softwares for their Enterprise, and Public projects.`}
       </p>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">

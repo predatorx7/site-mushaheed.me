@@ -1,4 +1,11 @@
+import AltBadge from "@/components/alt_badge";
 import { WorkExperienceSection } from "@/components/work/work";
+import Image from "next/image";
+import hdfcbankPng from "public/images/hdfcbank.png";
+import finouxSvg from "public/images/finoux.svg";
+import creatorosSvg from "public/images/creatoros.svg";
+import reclaimPng from "public/images/reclaim.png";
+import bluecheckPng from "public/images/bluecheck.png";
 
 export const metadata = {
   title: "Work",
@@ -17,21 +24,106 @@ export default function WorkPage() {
         </p>
         <WorkExperienceSection
           data={{
-            organizationName: "Finoux",
-            designationTitle: "Senior Software Engineer",
+            organizationName: "CreatorOS",
+            designationTitle: "Software Developer",
             years: {
-              start: "Nov 2022",
+              start: "Jul 2024",
             },
           }}
         >
           <p>
-            Finoux develops Enterprise Fintech solutions partnering with
+            <span className="not-prose">
+              <AltBadge href="https://creatoros.co/">
+                <Image
+                  src={creatorosSvg}
+                  alt="CreatorOS"
+                  width="20"
+                  height="20"
+                  role="img"
+                  aria-label="CreatorOS"
+                  className="inline-flex mr-1"
+                />
+              </AltBadge>
+            </span>
+            {" "}, a YC W21 company, develops products related to data verification using cryptography, and blockchain.
+          </p>
+          <ul>
+            <li>
+              {` I specialize in the creation of cross-platform mobile applications and SDKs to help build `}
+              <span className="not-prose">
+                <AltBadge href="https://reclaimprotocol.org/">
+                  <Image
+                    src={reclaimPng}
+                    alt="Reclaim Protocol"
+                    width="80"
+                    height="20"
+                    role="img"
+                    aria-label="Reclaim Protocol"
+                    className="inline-flex mr-1"
+                  />
+                </AltBadge>
+              </span>
+              {` and `}
+              <span className="not-prose">
+                <AltBadge href="https://thebluecheck.com/">
+                  <Image
+                    src={bluecheckPng}
+                    alt="The Blue Check"
+                    width="100"
+                    height="20"
+                    role="img"
+                    aria-label="The Blue Check"
+                    className="inline-flex mr-1"
+                  />
+                </AltBadge>
+              </span>
+            </li>
+          </ul>
+        </WorkExperienceSection>
+        <WorkExperienceSection
+          data={{
+            organizationName: "Finoux",
+            designationTitle: "Senior Software Engineer",
+            years: {
+              start: "Nov 2022",
+              end: "Aug 2024",
+            },
+          }}
+        >
+          <p>
+            <span className="not-prose">
+              <AltBadge href="https://www.finoux.com/">
+                <Image
+                  src={finouxSvg}
+                  alt="Finoux"
+                  width="80"
+                  height="20"
+                  role="img"
+                  aria-label="Finoux"
+                  className="inline-flex mr-1"
+                />
+              </AltBadge>
+            </span>
+            {" "}develops Enterprise Fintech solutions partnering with
             organizations in BSFI sector
           </p>
           <ul>
             <li>
-              Led the software development of HDFC Bank's Banking as a Service
-              (BaaS) products. Owned the development lifecycle, including
+              Led the software development of{" "}
+              <span className="not-prose">
+                <AltBadge href="https://www.finoux.com/">
+                  <Image
+                    src={hdfcbankPng}
+                    alt="HDFC Bank"
+                    width="116"
+                    height="20"
+                    role="img"
+                    aria-label="HDFC Bank"
+                    className="inline-flex mr-1"
+                  />
+                </AltBadge>
+              </span>
+              's Banking as a Service (BaaS) Enterprise & Public products. Owned the development lifecycle, including
               creating high-level design (HLD) documents, low-level design (LLD)
               documents, proof-of-concept (PoC) prototypes, and leading the team
               through task delegation.
