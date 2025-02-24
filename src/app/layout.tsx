@@ -8,6 +8,7 @@ import { GeistMono } from "geist/font/mono";
 import { Navbar } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { BASE_URL } from "@/lib/constants";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -56,6 +57,7 @@ export default function RootLayout({
           {children}
           <Footer author="Mushaheed Syed" />
         </main>
+        <SpeedInsights />
       </body>
     </html>
   );
