@@ -2,8 +2,11 @@ import { loginUrl, logout } from "@/lib/auth-action";
 import Link from "next/link";
 
 export function SignOut() {
+  const handleLogout = async () => {
+    await logout();
+  };
   return (
-    <form action={logout}>
+    <form action={handleLogout}>
       <button className="text-xs text-neutral-700 dark:text-neutral-300 mt-2 mb-6">
         Sign out
       </button>
