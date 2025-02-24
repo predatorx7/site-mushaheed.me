@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export function SignOut() {
   const handleLogout = async () => {
+    "use server";
     await logout();
   };
   return (
