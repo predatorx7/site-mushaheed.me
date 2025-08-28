@@ -7,7 +7,7 @@ import creatorosSvg from "public/images/creatoros.svg";
 import reclaimPng from "public/images/reclaim.png";
 import bluecheckPng from "public/images/bluecheck.png";
 import flutterConfJpg from "public/images/home/flutter_conf.jpg";
-import ayushShekharJpg from "public/images/home/me_with_ayush_shekar.jpg";
+import dc7Sea from "public/images/home/me_in_dc7_sea.jpg";
 import iitbAndroidJpg from "public/images/home/iitb_android.jpg";
 import attendedFlutterConfInJpg from "public/images/home/attended_flutter_conf_in.jpg";
 import tryingToWorkJpg from "public/images/home/trying_to_work.jpg";
@@ -105,8 +105,8 @@ export default function Home() {
         </div>
         <div className="relative h-40 sm:h-80 sm:mb-4">
           <Image
-            alt="Me with Ayush Shekar at the Flutter Conf India"
-            src={ayushShekharJpg}
+            alt="Me at DC7 SEA in Bangkok, Thailand"
+            src={dc7Sea}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
