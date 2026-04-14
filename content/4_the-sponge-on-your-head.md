@@ -1,5 +1,5 @@
 ---
-title: That Is So Absurd: The Sponge On Your Head
+title: "That Is So Absurd: The Sponge On Your Head"
 publish_date: 2026-04-14
 summary: "Sharing my observations, and possible solutions for unethical computer software usage in indian education institutes"
 tags: ["care", "hygiene", "technology"]
