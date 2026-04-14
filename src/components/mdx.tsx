@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { highlight } from "sugar-high";
 import React from "react";
+import remarkGfm from "remark-gfm";
 
 function Table({ data }: { data: { rows: string[][]; headers: string[] } }) {
   let headers = data.headers.map((header, index) => (
@@ -166,6 +167,16 @@ export function CustomMarkdownContent(props: any) {
     <MDXRemote
       {...props}
       components={{ ...components, ...(props.components || {}) }}
+      options={{
+        ...(props.options || {}),
+        mdxOptions: {
+          ...(props.options?.mdxOptions || {}),
+          remarkPlugins: [
+            ...(props.options?.mdxOptions?.remarkPlugins || []),
+            remarkGfm,
+          ],
+        },
+      }}
     />
   );
 }

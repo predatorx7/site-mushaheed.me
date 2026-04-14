@@ -65,12 +65,12 @@ Think of this as your weekly raid rotation:
 
 | Day | The Routine | Mission Objective |
 | :---- | :---- | :---- |
-| **Monday** | **Treatment Wash:** Scalpe Pro \+ Re'equil \+ L.C.O Stack | **Scalp Reset:** Kick off the week by nuking any dandruff build-up. |
+| **Monday** | **Treatment Wash:** Scalpe Pro + Re'equil + L.C.O Stack | **Scalp Reset:** Kick off the week by nuking any dandruff build-up. |
 | **Tuesday** | **Rest Day:** Promend Serum (1 drop only) | **Maintain:** Light surface touch-ups only. No water. |
 | **Wednesday** | **Rest Day:** Promend Serum (1 drop only) | **Maintain:** Keep the forcefield active. |
-| **Thursday** | **Reset Wash:** Plum Shampoo \+ Re'equil \+ L.C.O Stack | **Post-Match Recovery:** Wash away the sweat gently. |
+| **Thursday** | **Reset Wash:** Plum Shampoo + Re'equil + L.C.O Stack | **Post-Match Recovery:** Wash away the sweat gently. |
 | **Friday** | **Rest Day:** Promend Serum (1 drop only) | **Maintain:** Coasting into the weekend. |
-| **Saturday** | **Treatment Wash:** Scalpe Pro \+ Re'equil \+ L.C.O Stack | **Scalp Reset:** Round two of dandruff defense. |
+| **Saturday** | **Treatment Wash:** Scalpe Pro + Re'equil + L.C.O Stack | **Scalp Reset:** Round two of dandruff defense. |
 | **Sunday** | **Rest Day:** Promend Serum (1 drop only) | **Maintain:** Chill and let the hair rest. |
 
 ### ---
@@ -93,27 +93,27 @@ Using the wrong item on the wrong hitbox will drain your hair's HP. Follow these
 
 Your hair will face environmental hazards outside the bathroom. Here is how you survive them:
 
-**1\. The 20-Day Reset (Haircuts)**
+**1. The 20-Day Reset (Haircuts)**
 
 Highly porous hair frays easily. Once a strand splits at the end, that split will travel all the way up to the root, destroying the hair. Listen to your hairstylist: get a trim every 20 days. You only need to chop the microscopic dead ends to keep the health bar full.
 
-**2\. On-The-Go / No Time To Shower**
+**2. On-The-Go / No Time To Shower**
 
 If you are out running errands, finished a ride, and have zero time to shower, do NOT splash water on your head to fix your hair. Water without sealant just causes frizz. Instead, slightly dampen your palms with a drop of water, add 1 drop of your Promend Serum, rub your hands together, and gently *pat* the outside of your hair to tame the chaos.
 
-**3\. The Beach / Ocean Biome Hazard**
+**3. The Beach / Ocean Biome Hazard**
 
 If you find yourself on a tropical shoreline, beware the ocean. Saltwater is catastrophic for porous hair. **Never jump into the ocean with dry hair.** Because your hair is a sponge, it will instantly soak up 100% saltwater, which strips all oil and snaps the strands.
 
-* *The Hack:* Before hitting the waves, drench your hair with fresh tap water and coat it with a layer of Cantu cream. If the "sponge" is already full of good moisture, there is no room for the damaging saltwater to enter\! Wash it out immediately after your swim.
+* *The Hack:* Before hitting the waves, drench your hair with fresh tap water and coat it with a layer of Cantu cream. If the "sponge" is already full of good moisture, there is no room for the damaging saltwater to enter! Wash it out immediately after your swim.
 
-### **The Golden Rule (Warning\!)**
+### **The Golden Rule (Warning!)**
 
 Listen very carefully, because this is where most runs end in a Game Over.
 
 **Never, ever dry-brush highly porous hair.**
 
-When your hair is dry, those open cuticles act like microscopic Velcro hooks. If you try to run your fingers or a comb *through* the strands, they snag on each other, rip, and break. That is where your hair fall is coming from\!
+When your hair is dry, those open cuticles act like microscopic Velcro hooks. If you try to run your fingers or a comb *through* the strands, they snag on each other, rip, and break. That is where your hair fall is coming from!
 
 Treat your dry hair like a delicate clay sculpture, not a lawn that needs raking. You only manipulate the shape on the surface.
 
