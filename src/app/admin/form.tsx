@@ -2,10 +2,17 @@
 
 import { useFormStatus } from "react-dom";
 import { useState, useEffect } from "react";
-import { GuestBookData, deleteGuestbookEntries } from "@/db/guestbook";
 import { cx } from "@/utils/css";
 
-export default function Form({ entries }: { entries: GuestBookData[] }) {
+export default function Form({ 
+  entries,
+  deleteAction,
+  title
+}: { 
+  entries: any[];
+  deleteAction: (ids: string[]) => Promise<any>;
+  title: string;
+}) {
   const [selectedInputs, setSelectedInputs] = useState<string[]>([]);
   const [startShiftClickIndex, setStartShiftClickIndex] = useState<number>(0);
   const [isShiftKeyPressed, setIsShiftKeyPressed] = useState(false);
@@ -101,11 +108,13 @@ export default function Form({ entries }: { entries: GuestBookData[] }) {
 
   return (
     <form
+      className="mb-12"
       onSubmit={async (e) => {
         e.preventDefault();
-        await deleteGuestbookEntries(selectedInputs);
+        await deleteAction(selectedInputs);
       }}
     >
+      <h2 className="text-xl font-medium mb-4">{title}</h2>
       <DeleteButton isActive={selectedInputs.length !== 0} />
       {entries.map((entry, index) => (
         <GuestbookEntry key={entry.id} entry={entry}>
@@ -127,17 +136,17 @@ function GuestbookEntry({
   entry,
   children,
 }: {
-  entry: GuestBookData;
+  entry: any;
   children: JSX.Element;
 }) {
   return (
     <div className="flex flex-col space-y-1 mb-4">
       <div className="w-full text-sm break-words items-center flex">
         {children}
-        <span className="text-neutral-600 dark:text-neutral-400 mr-1 border-neutral-100">
-          {entry.created_by}:
+        <span className="text-neutral-600 dark:text-neutral-400 mr-1 border-neutral-100 min-w-fit">
+          {entry.name || entry.created_by}:
         </span>
-        {entry.body}
+        <span className="truncate">{entry.body}</span>
       </div>
     </div>
   );

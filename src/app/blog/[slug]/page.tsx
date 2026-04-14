@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { unstable_noStore as noStore } from "next/cache";
 import { CustomMarkdownContent } from "@/components/mdx";
+import Comments from "./comments";
 
 export async function generateMetadata({
   params,
@@ -125,6 +126,7 @@ export default async function Blog({ params }: { params: { slug: string } }) {
       <article className="prose prose-quoteless prose-neutral dark:prose-invert">
         <CustomMarkdownContent source={post.content} />
       </article>
+      <Comments slug={post.slug} />
     </section>
   );
 }
