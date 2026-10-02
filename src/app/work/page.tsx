@@ -3,13 +3,12 @@ import { WorkExperienceSection } from "@/components/work/work";
 import Image from "next/image";
 import hdfcbankPng from "public/images/hdfcbank.png";
 import finouxSvg from "public/images/finoux.svg";
-import creatorosSvg from "public/images/creatoros.svg";
 import reclaimPng from "public/images/reclaim.png";
-import bluecheckPng from "public/images/bluecheck.png";
 
 export const metadata = {
   title: "Work",
-  description: "A summary of my work and contributions.",
+  description:
+    "My work across verification infrastructure, SDKs, developer tooling, mobile applications, and production systems.",
 };
 
 export default function WorkPage() {
@@ -18,13 +17,14 @@ export default function WorkPage() {
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">My Work</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          On a mission to build products that makes everyone's life{" "}
-          <b>easier</b>, and along the way, spread my knowledge which I
-          collected from my journey. Here's a summary of my work so far.
+          I build developer-facing products and production systems across SDKs,
+          mobile platforms, APIs, infrastructure, and the web. My recent work
+          focuses on authenticated-data verification: making complex protocol
+          and cryptographic systems reliable and approachable for developers.
         </p>
         <WorkExperienceSection
           data={{
-            organizationName: "CreatorOS",
+            organizationName: "CreatorOS / Reclaim Protocol",
             designationTitle: "Software Developer",
             years: {
               start: "Jul 2024",
@@ -33,50 +33,61 @@ export default function WorkPage() {
         >
           <p>
             <span className="not-prose">
-              <AltBadge href="https://creatoros.co/">
+              <AltBadge href="https://reclaimprotocol.org/">
                 <Image
-                  src={creatorosSvg}
-                  alt="CreatorOS"
-                  width="20"
+                  src={reclaimPng}
+                  alt="Reclaim Protocol"
+                  width="80"
                   height="20"
                   role="img"
-                  aria-label="CreatorOS"
+                  aria-label="Reclaim Protocol"
                   className="inline-flex mr-1"
                 />
               </AltBadge>
             </span>
-            {" "}, a YC W21 company, develops products related to data verification using cryptography, and blockchain.
+            {" "}
+            lets people prove facts about their authenticated data without
+            handing over an entire account or document.
           </p>
           <ul>
             <li>
-              {` I specialize in the creation of cross-platform mobile applications and SDKs to help build `}
-              <span className="not-prose">
-                <AltBadge href="https://reclaimprotocol.org/">
-                  <Image
-                    src={reclaimPng}
-                    alt="Reclaim Protocol"
-                    width="80"
-                    height="20"
-                    role="img"
-                    aria-label="Reclaim Protocol"
-                    className="inline-flex mr-1"
-                  />
-                </AltBadge>
-              </span>
-              {` and `}
-              <span className="not-prose">
-                <AltBadge href="https://thebluecheck.com/">
-                  <Image
-                    src={bluecheckPng}
-                    alt="The Blue Check"
-                    width="100"
-                    height="20"
-                    role="img"
-                    aria-label="The Blue Check"
-                    className="inline-flex mr-1"
-                  />
-                </AltBadge>
-              </span>
+              Build and maintain Reclaim&apos;s verification-client surface across
+              the Flutter in-app SDK, native add-to-app modules, verifier app,
+              browser-extension SDK, JavaScript SDK, portal, backend services,
+              and TEE integrations.
+            </li>
+            <li>
+              Designed and shipped versioned verification sessions spanning
+              OpenAPI contracts, claimant links, client capabilities,
+              callbacks, analytics events, proof delivery, feature flags, and
+              compatibility across multiple verification clients.
+            </li>
+            <li>
+              Built developer tooling that turns captured authenticated HTTP
+              traffic into reusable verification recipes through request
+              discovery, constraint analysis, extraction validation, proof
+              execution, and publishing.
+            </li>
+            <li>
+              Worked on an autonomous browser-and-LLM workflow for discovering
+              requests, validating proofs, isolating secrets, reporting
+              progress, and publishing successful verification strategies.
+            </li>
+            <li>
+              Conduct authorized black-box analysis of mobile and web
+              applications to understand authenticated API flows and build CLI
+              verification prototypes for complex consumer services.
+            </li>
+            <li>
+              Helped build Reclaim Builder across discovery and verification
+              UX, APIs, PostgreSQL data models, authentication, billing and
+              usage metering, generated SDK contracts, deployment, automated
+              tests, and operational documentation.
+            </li>
+            <li>
+              Hardened verification behavior with typed feature configuration,
+              client capability reporting, deep links and deferred installs,
+              diagnostics redaction, and integration and end-to-end tests.
             </li>
           </ul>
         </WorkExperienceSection>
@@ -104,8 +115,9 @@ export default function WorkPage() {
                 />
               </AltBadge>
             </span>
-            {" "}develops Enterprise Fintech solutions partnering with
-            organizations in BSFI sector
+            {" "}
+            develops enterprise fintech products for organizations in the BFSI
+            sector.
           </p>
           <ul>
             <li>
@@ -123,41 +135,27 @@ export default function WorkPage() {
                   />
                 </AltBadge>
               </span>
-              's Banking as a Service (BaaS) Enterprise & Public products. Owned the development lifecycle, including
-              creating high-level design (HLD) documents, low-level design (LLD)
-              documents, proof-of-concept (PoC) prototypes, and leading the team
-              through task delegation.
+              &apos;s Banking-as-a-Service products. Owned delivery from proofs of
+              concept and high- and low-level design through implementation and
+              team coordination.
             </li>
             <li>
-              Built feature-rich mobile apps for Android and iOS using Flutter
-              and Ionic-AngularJS, achieving rapid development and consistent
-              cross-platform experiences.
+              Built and maintained enterprise mobile, web, and backend systems
+              using Flutter, Ionic/Cordova, React, Redux Toolkit, Node.js,
+              NestJS, PostgreSQL, and Docker Compose.
             </li>
             <li>
-              Mentored team members and Led the development of a well-documented
-              full-stack enterprise web application using ReactJS, ExpressJS,
-              Redux, NestJS, and Docker-Compose, prioritizing scalability and
-              maintainability.
+              Developed Flutter/Android and Ionic/Android plugins alongside
+              reusable TypeScript, Dart, and Flutter packages.
             </li>
             <li>
-              Responsible for developing mobile, web, and backend of multiple
-              enterprise, and public applications.
+              Created Bash, Python, Dart, and JavaScript tooling for local
+              development and CI/CD, improving repeatability across development
+              and release workflows.
             </li>
             <li>
-              Developed Flutter-Android, Ionic-Android plugins, and Typescript,
-              Flutter, and Dart packages.
-            </li>
-            <li>
-              Maintained the HDFC Bank Home Loans which uses Ionic Cordova.
-            </li>
-            <li>
-              Created internal tools for standalone and CI/CD usage leveraging
-              Bash, Python, Dart, and JavaScript, contributing to improved
-              processes and team efficiency.
-            </li>
-            <li>
-              Led the Flutter development team, effectively delegating tasks,
-              fostering teamwork, and delivering projects on time.
+              Led and mentored the Flutter team, reviewed implementations, and
+              coordinated delivery across product surfaces.
             </li>
           </ul>
         </WorkExperienceSection>
@@ -172,53 +170,29 @@ export default function WorkPage() {
           }}
         >
           <p>
-            Binary Numbers is a specialized product engineering, web and app
-            development company
+            Binary Numbers is a product engineering and application development
+            company.
           </p>
           <ul>
             <li>
-              Developed a scalable project template for NodeJS, and Flutter that
-              reduced delivery time for apps that conforms to community best
-              practices.
+              Led and mentored mobile engineers while owning architecture,
+              technology choices, priorities, performance, and delivery for
+              Flutter and Node.js products.
             </li>
             <li>
-              Handled technical aspects of the product, including technology
-              decisions and choices, architecture, priorities, and velocity.
+              Shipped more than nine applications, including four
+              internationalized products, while collaborating with multiple
+              product teams.
             </li>
             <li>
-              Led & mentored a team of mobile developers, where I was involved
-              in building flutter, and NodeJs applications.
+              Built reusable Flutter and Node.js foundations, private packages,
+              native plugins, container configurations, deployment automation,
+              and test infrastructure.
             </li>
             <li>
-              Responsible for the development of private packages/plugins.
-            </li>
-            <li>
-              Developed container configs, and tools to help maintain code, and
-              automate various development-deployment tasks.
-            </li>
-            <li>
-              Responsible for performance profiling and optimizations. Wrote
-              unit & integration tests for critical components.
-            </li>
-            <li>
-              Experience with MVCVM, MVVM pattern on apps and MVC, and the
-              microservices pattern on servers.
-            </li>
-            <li>
-              Used riverpod, streams, provider, and ephemeral for state
-              management in flutter and Hive, and Drift for storage in dart.
-            </li>
-            <li>
-              Integrated Razorpay, and Amazon IAP on backend and flutter apps.
-              Built content delivery files builder for OTT apps.
-            </li>
-            <li>
-              Deployed, and developed over 9 projects including 4
-              internationalized apps in 2 years.
-            </li>
-            <li>
-              Collaborated with 4+ teams to deliver projects on time retaining
-              100% of clients in the 2-year period.
+              Integrated Razorpay, Amazon in-app purchases, and other payment
+              gateways across Kotlin, Flutter, and Express.js systems, and
+              built content-delivery tooling for OTT applications.
             </li>
           </ul>
         </WorkExperienceSection>
@@ -233,28 +207,55 @@ export default function WorkPage() {
           }}
         >
           <p>Kootumb is a web & app development consultancy firm.</p>
-          <p>
-            I joined <b>Kootumb</b> as an intern to grow as a Serverless Mobile
-            application developmer. I built social media app like Instagram
-            using <a href="https://flutter.dev">Flutter</a>, and{" "}
-            <a href="https://firebase.google.com/">Firebase</a>.
-          </p>
           <ul>
             <li>
-              As an individual contributor, I developed a sample prototype
-              social media serverless application using Flutter & Firebase
-              Integrated the provider for state management in the app.
-            </li>
-            <li>
-              Prepared retry logic in the app in the event of errors, broken
-              connections, or server problems.
-            </li>
-            <li>
-              Implemented the mobile application user interface according to
-              design specifications.
+              Built a Flutter and Firebase social-application prototype with
+              state management, responsive interfaces, and retry behavior for
+              failed requests.
             </li>
           </ul>
         </WorkExperienceSection>
+
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">
+          Independent production work
+        </h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+          Product engineering and operations
+        </p>
+        <p>
+          Alongside my primary role, I build and maintain production products
+          for small businesses and specialist teams.
+        </p>
+        <ul>
+          <li>
+            <b>Paints operations platform:</b> a TypeScript and PostgreSQL
+            system for inventory, purchasing, production runs, reconciliation,
+            and operational reporting, with typed SQL and deployment tooling.
+          </li>
+          <li>
+            <b>Thaathayya Illu:</b> a production hospitality booking system
+            with payments, authentication, availability management, admin
+            workflows, notifications, rate limiting, and cloud file storage.
+          </li>
+          <li>
+            <b>Aline:</b> a production physiotherapy platform with a patient
+            website, staff console, Go API, PostgreSQL, Firebase authentication,
+            Google Cloud deployment, generated API clients, and care-management
+            workflows.
+          </li>
+        </ul>
+
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">
+          Open source
+        </h2>
+        <p>
+          I contribute to developer libraries and tools across Dart, Flutter,
+          TypeScript, Go, Kotlin, C/C++, and Python. My contributions to
+          Google&apos;s Flutter and Dart repositories have also appeared in
+          Flutter&apos;s notable commits.
+        </p>
       </div>
     </section>
   );
