@@ -22,12 +22,36 @@ export default function WorkPage() {
           focuses on authenticated-data verification: making complex protocol
           and cryptographic systems reliable and approachable for developers.
         </p>
+
+        <h2 className="font-medium text-xl mt-8 mb-1 tracking-tighter">
+          Impact
+        </h2>
+        <ul>
+          <li>
+            Supported <b>more than five million verifications</b> across a wide
+            range of Reclaim Protocol customer use cases.
+          </li>
+          <li>
+            Shipped OTT applications with <b>850,000+ combined downloads</b>,
+            more than 126,000 combined monthly active users, and up to 99.85%
+            crash-free users.
+          </li>
+          <li>
+            Built a hospitality booking system that surpassed{" "}
+            <b>₹753,000 in net revenue within two months</b> of launching for a
+            single property.
+          </li>
+          <li>
+            Contributed to Google&apos;s Flutter and Dart repositories, with work
+            featured in Flutter&apos;s notable commits.
+          </li>
+        </ul>
         <WorkExperienceSection
           data={{
-            organizationName: "CreatorOS / Reclaim Protocol",
+            organizationName: "Reclaim Protocol by CreatorOS (YC W21)",
             designationTitle: "Software Developer",
             years: {
-              start: "Jul 2024",
+              start: "Jun 2024",
             },
           }}
         >
@@ -51,8 +75,8 @@ export default function WorkPage() {
           </p>
           <ul>
             <li>
-              Build and maintain Reclaim&apos;s verification-client surface across
-              the Flutter in-app SDK, native add-to-app modules, verifier app,
+              Lead native and cross-platform SDK development across the Flutter
+              in-app SDK, Android/iOS add-to-app modules, verifier app,
               browser-extension SDK, JavaScript SDK, portal, backend services,
               and TEE integrations.
             </li>
@@ -64,19 +88,20 @@ export default function WorkPage() {
             </li>
             <li>
               Built developer tooling that turns captured authenticated HTTP
-              traffic into reusable verification recipes through request
+              traffic into reusable verification strategies through request
               discovery, constraint analysis, extraction validation, proof
-              execution, and publishing.
+              execution, publishing, and agent-facing documentation.
             </li>
             <li>
-              Worked on an autonomous browser-and-LLM workflow for discovering
-              requests, validating proofs, isolating secrets, reporting
-              progress, and publishing successful verification strategies.
+              Implemented AI-assisted verification infrastructure with
+              autonomous browser workflows, isolated secret handling,
+              interchangeable model adapters, progress reporting, proof
+              validation, and publish-on-success behavior.
             </li>
             <li>
-              Conduct authorized black-box analysis of mobile and web
-              applications to understand authenticated API flows and build CLI
-              verification prototypes for complex consumer services.
+              Conduct authorized black-box protocol research on mobile and web
+              applications, identifying authenticated API flows and building
+              CLI prototypes that produce zkTLS-backed verification proofs.
             </li>
             <li>
               Helped build Reclaim Builder across discovery and verification
@@ -93,7 +118,7 @@ export default function WorkPage() {
         </WorkExperienceSection>
         <WorkExperienceSection
           data={{
-            organizationName: "Finoux",
+            organizationName: "Finoux Solutions Pvt Ltd / HDFC Bank",
             designationTitle: "Senior Software Engineer",
             years: {
               start: "Nov 2022",
@@ -142,7 +167,13 @@ export default function WorkPage() {
             <li>
               Built and maintained enterprise mobile, web, and backend systems
               using Flutter, Ionic/Cordova, React, Redux Toolkit, Node.js,
-              NestJS, PostgreSQL, and Docker Compose.
+              NestJS, PostgreSQL, and Docker Compose, including the HDFC Bank
+              Home Loans application.
+            </li>
+            <li>
+              Led development of a documented, maintainable full-stack
+              enterprise platform and mentored engineers across mobile and web
+              delivery.
             </li>
             <li>
               Developed Flutter/Android and Ionic/Android plugins alongside
@@ -161,7 +192,7 @@ export default function WorkPage() {
         </WorkExperienceSection>
         <WorkExperienceSection
           data={{
-            organizationName: "Binary Numbers",
+            organizationName: "Binary Numbers Itzone LLP",
             designationTitle: "Senior Software Developer",
             years: {
               start: "Aug 2020",
@@ -173,16 +204,21 @@ export default function WorkPage() {
             Binary Numbers is a product engineering and application development
             company.
           </p>
+          <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+            Senior Software Developer, Apr 2022 - Nov 2022 · Junior Software
+            Developer, Jun 2021 - Mar 2022 · Software Developer Intern, Aug 2020
+            - May 2021
+          </p>
           <ul>
             <li>
-              Led and mentored mobile engineers while owning architecture,
-              technology choices, priorities, performance, and delivery for
-              Flutter and Node.js products.
+              Earned two promotions in under two years, progressing from intern
+              to senior developer while taking ownership of architecture,
+              delivery planning, mentoring, and project velocity.
             </li>
             <li>
               Shipped more than nine applications, including four
-              internationalized products, while collaborating with multiple
-              product teams.
+              internationalized products, while collaborating across four or
+              more teams and retaining every client during the two-year period.
             </li>
             <li>
               Built reusable Flutter and Node.js foundations, private packages,
@@ -194,55 +230,68 @@ export default function WorkPage() {
               gateways across Kotlin, Flutter, and Express.js systems, and
               built content-delivery tooling for OTT applications.
             </li>
+            <li>
+              Diagnosed memory leaks, unreachable code, and state-management
+              failures, and shipped applications across Android, iOS, Android
+              TV, and Fire TV.
+            </li>
           </ul>
         </WorkExperienceSection>
         <WorkExperienceSection
           data={{
-            organizationName: "Kootumb",
+            organizationName: "Kootumb Multimedia Pvt Ltd",
             designationTitle: "Flutter Developer Intern",
             years: {
               start: "Aug 2019",
-              end: "Mar 2020",
+              end: "Feb 2020",
             },
           }}
         >
-          <p>Kootumb is a web & app development consultancy firm.</p>
+          <p>Kootumb is a web and application development consultancy.</p>
           <ul>
             <li>
-              Built a Flutter and Firebase social-application prototype with
-              state management, responsive interfaces, and retry behavior for
-              failed requests.
+              Built a serverless Flutter and Firebase social-application
+              prototype with authentication, cloud storage, crash analytics,
+              state management, privacy controls, and retry behavior.
+            </li>
+            <li>
+              Translated wireframes and UI prototypes into responsive
+              interfaces and tested public and private user flows across
+              multiple accounts.
             </li>
           </ul>
         </WorkExperienceSection>
 
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">
-          Independent production work
+          Side projects
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
           Product engineering and operations
         </p>
         <p>
-          Alongside my primary role, I build and maintain production products
+          Alongside my primary role, I build and operate production products
           for small businesses and specialist teams.
         </p>
         <ul>
           <li>
-            <b>Paints operations platform:</b> a TypeScript and PostgreSQL
-            system for inventory, purchasing, production runs, reconciliation,
-            and operational reporting, with typed SQL and deployment tooling.
+            <b>Ink manufacturing and resource-planning platform:</b> a
+            production TypeScript and PostgreSQL monorepo for inventory,
+            purchasing, production runs, reconciliation, precision-safe stock
+            accounting, analytics, typed SQL, and operational tooling.
           </li>
           <li>
-            <b>Thaathayya Illu:</b> a production hospitality booking system
-            with payments, authentication, availability management, admin
-            workflows, notifications, rate limiting, and cloud file storage.
+            <a href="https://thaathayyaillu.com/"><b>Thaathayya Illu:</b></a>{" "}
+            a production hospitality booking system with React, Node.js,
+            PostgreSQL, Razorpay payments, authentication, availability
+            management, admin workflows, notifications, rate limiting, and
+            cloud file storage.
           </li>
           <li>
-            <b>Aline:</b> a production physiotherapy platform with a patient
-            website, staff console, Go API, PostgreSQL, Firebase authentication,
-            Google Cloud deployment, generated API clients, and care-management
-            workflows.
+            <a href="https://alinelife.com/"><b>Aline:</b></a> a production
+            physiotherapy platform with a patient website, staff console, Go
+            API, PostgreSQL, Firebase authentication and hosting, Google Cloud
+            deployment, generated API clients, and care-management workflows.
           </li>
         </ul>
 
@@ -256,6 +305,19 @@ export default function WorkPage() {
           Google&apos;s Flutter and Dart repositories have also appeared in
           Flutter&apos;s notable commits.
         </p>
+
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Education</h2>
+        <ul>
+          <li>
+            <b>Master of Computer Applications, Computer Science</b> — Manipal
+            Institute of Technology, Mar 2023 - Jun 2025.
+          </li>
+          <li>
+            <b>Bachelor of Science, Information Technology</b> — Nagindas
+            Khandwala College, Jun 2018 - May 2021; CGPA 8.49/10, Grade A.
+          </li>
+        </ul>
       </div>
     </section>
   );

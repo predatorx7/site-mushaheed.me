@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     template: "%s | Mushaheed Syed",
   },
   description:
-    "Software engineer building SDKs, developer tooling, verification infrastructure, and production applications.",
+    "Senior software engineer building SDKs, developer tooling, verification infrastructure, and production applications.",
   openGraph: {
     title: "Mushaheed Syed",
     description:
-      "Software engineer building SDKs, developer tooling, verification infrastructure, and production applications.",
+      "Senior software engineer building SDKs, developer tooling, verification infrastructure, and production applications.",
     url: "https://mushaheed.me",
     siteName: "Mushaheed Syed",
     locale: "en_US",

@@ -32,7 +32,9 @@ export default function Home() {
         I&apos;m a <b>software engineer</b> who builds SDKs, developer tools,
         verification infrastructure, and production applications. I care about
         clear APIs, dependable systems, and making difficult technology easier
-        for other developers to use.
+        for other developers to use. My work has supported more than five
+        million verifications and applications with over 850,000 combined
+        downloads.
       </p>
       <br />
       <p className="prose prose-neutral dark:prose-invert">
@@ -52,7 +54,7 @@ export default function Home() {
             />
           </AltBadge>
         </span>
-        {`. I also build and maintain independent products across operations, hospitality, and healthcare.`}
+        {`. I also build and operate products across manufacturing, hospitality, and healthcare.`}
       </p>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
